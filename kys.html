@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kysimused</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="kys.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="menu">
+    <ul class="menu-list">
+      <li class="menu-item"><a href="#statistika-view" class="menu-link statistika-view active-menu">Statistika</a></li>
+      <li class="menu-item"><a href="#kysimused-view" class="menu-link kysimused-view">Küsimused</a></li>
+      <li class="menu-item"><a href="#uuedkysimused-view" class="menu-link uuedkysimused-view">Uus küsimus</a></li>
+    </ul>
+  </nav>
+
+  <main role="main">
+
+    <div id="kysimused-view">
+      <h1>Küsimused</h1>
+      <div class="dropdown">
+        <select name="kys_teema" id="kys_teema">
+				  <option value="" disabled selected hidden>Teema</option>
+          <option value='aj-V-kl-MT' >aj-V-kl-MT</option>
+          <option value='aj-VI-kys1' >aj-VI-kys1</option>
+          <option value='aj-VII-kys1' >aj-VII-kys1</option>
+          <option value='aj-VIII-koopia-kys1' >aj-VIII-koopia-kys1</option>
+          <option value='aj-XI-kys1' >aj-XI-kys1</option>
+          <option value='aj-kr-lad-1' >aj-kr-lad-1</option>
+          <option value='fil-XI-kys1' >fil-XI-kys1</option>
+          <option value='tln-aj-koopia-kys1' >tln-aj-koopia-kys1</option>
+          <option value='tln-aj-kys1' >tln-aj-kys1</option>
+          <option value='yh-XII-koopia-kys1' >yh-XII-koopia-kys1</option>
+       </select>
+      </div>
+
+      <ul class="list-of-questions"></ul>
+    </div>
+
+    <div id="statistika-view">
+      <h1>Mingi statistika kuidagi siia ..</h1>
+
+    </div>
+
+    <div id="uuedkysimused-view">
+      <h1>Uue küsimuse lisamine</h1>
+
+      <div class="dropdown">
+        <select name="teema" id="teema">
+				  <option value="" disabled selected hidden>Teema</option>
+          <option value='aj-V-kl-MT' >aj-V-kl-MT</option>
+          <option value='aj-VI-kys1' >aj-VI-kys1</option>
+          <option value='aj-VII-kys1' >aj-VII-kys1</option>
+          <option value='aj-VIII-koopia-kys1' >aj-VIII-koopia-kys1</option>
+          <option value='aj-XI-kys1' >aj-XI-kys1</option>
+          <option value='aj-kr-lad-1' >aj-kr-lad-1</option>
+          <option value='fil-XI-kys1' >fil-XI-kys1</option>
+          <option value='tln-aj-koopia-kys1' >tln-aj-koopia-kys1</option>
+          <option value='tln-aj-kys1' >tln-aj-kys1</option>
+          <option value='yh-XII-koopia-kys1' >yh-XII-koopia-kys1</option>
+       </select>
+      </div>
+
+      <br><br><label for="uus_kysimus">Küsimus: </label><br>
+      <input type="text" name="uus_kysimus" id="uus_kysimus" class="uus_kysimus"><br>
+
+
+      <input type="radio" name="variant" id="variant1" value="1">
+      <label for="uus_var1">Variant 1: </label><br>
+      <input type="text" name="uus_var1" id="uus_var1" class="uus_var1"><br>
+
+      <input type="radio" name="variant" id="variant2" value="2">
+      <label for="uus_var2">Variant 2: </label><br>
+      <input type="text" name="uus_var2" id="uus_var2" class="uus_var2"><br>
+
+      <input type="radio" name="variant" id="variant3" value="3">
+      <label for="uus_var3">Variant 3: </label><br>
+      <input type="text" name="uus_var3" id="uus_var3" class="uus_var3"><br>
+
+      <input type="radio" name="variant" id="variant4" value="4">
+      <label for="uus_var4">Variant 4: </label><br>
+      <input type="text" name="uus_var4" id="uus_var4" class="uus_var4"><br><br>
+
+      <button id="add-new-question" class="add-new-question pull-right">Lisa uus küsimus</button>
+
+
+    </div>
+
+  </main>
+
+
+</body>
+</html>
